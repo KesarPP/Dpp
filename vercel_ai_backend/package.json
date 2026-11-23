@@ -1,13 +1,19 @@
 {
   "name": "dpp-vercel-ai-backend",
   "version": "1.0.0",
-  "description": "Serverless AI backend for DPP app powered by Google Gemini (gemini-2.5-flash)",
+  "description": "Serverless AI backend for DPP app powered by Google Gemini",
   "type": "module",
   "main": "api/chat.js",
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["vercel", "serverless", "groq", "gemini", "ai"],
+  "keywords": [
+    "vercel",
+    "serverless",
+    "groq",
+    "gemini",
+    "ai"
+  ],
   "author": "DPP Team",
   "license": "MIT"
 }
