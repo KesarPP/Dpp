@@ -949,6 +949,1213 @@ class _HandoutImageScreenState extends State<_HandoutImageScreen> {
       );
     }
 
+    // ==========================================
+    // MODULE 2: SESSION 5
+    // ==========================================
+    if (t.contains('understanding physical activity')) {
+      // Session 5, Item 1: Understanding Physical Activity
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s5_understanding_activity.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('why physical activity matters')) {
+      // Session 5, Item 2: Why Physical Activity Matters
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s5_why_activity_matters.png',
+            height: 140,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('health benefits of physical activity')) {
+      // Session 5, Item 3: Health Benefits of Physical Activity
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s5_health_benefits.png',
+            height: 155,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('insulin resistance')) {
+      // Session 5, Item 4: Physical Activity and Insulin Resistance
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildSideBySide(
+            text: text,
+            assetPath: 'assets/images/handouts/module_2/s5_insulin_resistance.png',
+            imageOnLeft: false,
+            imageHeight: 200,
+            textFlex: 5,
+            imageFlex: 4,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('understanding activity intensity')) {
+      // Session 5, Item 5: Understanding Activity Intensity
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildSideBySide(
+            text: text,
+            assetPath: 'assets/images/handouts/module_2/s5_activity_intensity.png',
+            imageOnLeft: false,
+            imageHeight: 140,
+            textFlex: 5,
+            imageFlex: 4,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('the ndpp physical activity goal') || (t.contains('physical activity goal') && !t.contains('understanding'))) {
+      // Session 5, Item 6: The NDPP Physical Activity Goal
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s5_ndpp_goal.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('getting started safely')) {
+      // Session 5, Item 7: Getting Started Safely
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s5_getting_started_safely.png',
+            height: 175,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 2: SESSION 6
+    // ==========================================
+    if (t.contains('making physical activity a lifestyle') || t.contains('activity a lifestyle')) {
+      // Session 6, Item 1: Making Physical Activity a Lifestyle
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_active_lifestyle.png',
+            height: 175,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('starting safely') && !t.contains('getting')) {
+      // Session 6, Item 2: Starting Safely
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_starting_safely.png',
+            height: 175,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('types of physical activity')) {
+      // Session 6, Item 3: Types of Physical Activity
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_types_of_activity.png',
+            height: 145,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('flexibility activities') || t.contains('finding activities')) {
+      // Session 6, Item 4: Flexibility Activities
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_flexibility_activities.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('building activity gradually')) {
+      // Session 6, Item 5: Building Activity Gradually
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_building_gradually.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('reducing sedentary time')) {
+      // Session 6, Item 6: Reducing Sedentary Time
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s6_reducing_sedentary.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('creating an activity plan') || (t.contains('activity plan') && !t.contains('jump'))) {
+      // Session 6, Item 7: Creating an Activity Plan
+      if (pageIndex == 0) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildFormattedText(text),
+            const SizedBox(height: 12),
+            _buildLandscapeImage(
+              assetPath: 'assets/images/handouts/module_2/s6_activity_plan.png',
+              height: 180,
+              fit: BoxFit.contain,
+            ),
+          ],
+        );
+      }
+      return _buildFormattedText(text);
+    }
+
+    // ==========================================
+    // MODULE 2: SESSION 7
+    // ==========================================
+    if (t.contains('understanding calorie balance')) {
+      // Session 7, Item 1: Understanding Calorie Balance
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_calorie_balance.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('where calories go')) {
+      // Session 7, Item 2: Where Calories Go
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_calorie_balance.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('understanding weight change')) {
+      // Session 7, Item 3: Understanding Weight Change
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_weight_change.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('food and activity work together')) {
+      // Session 7, Item 4: Food and Activity Work Together
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_food_activity_together.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('setting realistic expectations') || t.contains('managing plateaus') || t.contains('weight loss plateaus')) {
+      // Session 7, Item 5: Setting Realistic Expectations and Managing Plateaus
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_expectations_plateaus.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('tracking progress')) {
+      // Session 7, Item 6: Tracking Progress
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_tracking_progress.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('long-term weight management')) {
+      // Session 7, Item 7: Long-Term Weight Management
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildFormattedText(text),
+          const SizedBox(height: 12),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_2/s7_long_term_management.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 3: SESSION 8
+    // ==========================================
+    if (t.contains('understanding behaviour triggers') || t.contains('behavior triggers')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s8_behaviour_triggers.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('identifying food cues') || t.contains('personal triggers')) {
+      if (pageIndex == 0) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildLandscapeImage(
+              assetPath: 'assets/images/handouts/module_3/s8_identifying_food_cues.png',
+              height: 165,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(height: 14),
+            _buildFormattedText(text),
+          ],
+        );
+      }
+      return _buildFormattedText(text);
+    }
+
+    if (t.contains('identifying activity cues')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s8_identifying_activity_cues.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('creating a healthy environment')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s8_creating_healthy_environment.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('taking control of your environment')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s8_taking_control_environment.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 3: SESSION 9
+    // ==========================================
+    if (t.contains('understanding problems and barriers') || t.contains('problems and barriers')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_problems_barriers.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding problem solving')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_understanding_problem_solving.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('step 1') || t.contains('identify the problem')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_step1_identify_problem.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('step 2') || t.contains('generate possible solutions')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_step2_generate_solutions.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('step 3') || t.contains('choose the best solution')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_step3_choose_best.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('step 4') || t.contains('try the solution')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_step4_try_solution.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('step 5') || t.contains('review the results')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_step5_review_results.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('building a problem-solving mindset') || (t.contains('problem-solving mindset') && !t.contains('understanding'))) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s9_building_problem_solving_mindset.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 3: SESSION 10
+    // ==========================================
+    if (t.contains('challenges of eating outside') || t.contains('eating outside the home')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s10_challenges_eating_out.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('key 1') || t.contains('plan ahead')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s10_key1_plan_ahead.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('key 2') || t.contains('make healthy choices')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s10_key2_healthy_choices.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('key 3') || t.contains('watch portion sizes')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s10_key3_watch_portions.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('key 4') || t.contains('ask for what you want') || t.contains('eat mindfully')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s10_key4_ask_what_you_want.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 3: SESSION 11
+    // ==========================================
+    if (t.contains('identifying negative thoughts')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s11_identifying_negative_thoughts.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding self-defeating thinking') || t.contains('self-defeating')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s11_self_defeating_thinking.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('challenging negative thoughts')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s11_challenging_negative_thoughts.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('replacing negative thoughts')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s11_replacing_negative_thoughts.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('building self-confidence') || t.contains('self-confidence')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s11_building_self_confidence.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 3: SESSION 12
+    // ==========================================
+    if (t.contains('understanding lifestyle change') && !t.contains('slippery slope')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s12_understanding_lifestyle_change.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding lapses')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s12_understanding_lapses.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding the slippery slope') || t.contains('slippery slope')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s12_understanding_slippery_slope.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('lapse vs relapse')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s12_lapse_vs_relapse.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('responding to a lapse') || t.contains('recognize what happened')) {
+      if (pageIndex == 0) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildLandscapeImage(
+              assetPath: 'assets/images/handouts/module_3/s12_responding_to_lapse.png',
+              height: 165,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(height: 14),
+            _buildFormattedText(text),
+          ],
+        );
+      }
+      return _buildFormattedText(text);
+    }
+
+    if (t.contains('building long-term success')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_3/s12_building_long_term_success.png',
+            height: 165,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 4: SESSION 13
+    // ==========================================
+    if (t.contains('the importance of staying active') || (t.contains('staying active') && !t.contains('social'))) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s13_staying_active_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+          const SizedBox(height: 10),
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s13_staying_active_2.png',
+            height: 150,
+            fit: BoxFit.cover,
+          ),
+        ],
+      );
+    }
+
+    if (t.contains('building an activity plan')) {
+      final img = pageIndex == 0 ? 's13_fitt_plan_1.png' : 's13_fitt_plan_2.png';
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/$img',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('increasing activity levels safely')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s13_increasing_levels_1.png',
+            height: 155,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('making activity a habit')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s13_making_habit_1.png',
+            height: 155,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('staying motivated') && t.contains('pedometer')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildSideBySide(
+            text: text,
+            assetPath: 'assets/images/handouts/module_4/s13_pedometer_steps.png',
+            imageOnLeft: false,
+            imageHeight: 145,
+            textFlex: 5,
+            imageFlex: 4,
+            fit: BoxFit.contain,
+          ),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 4: SESSION 14
+    // ==========================================
+    if (t.contains('understanding social cues')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_social_cues_1.png',
+            height: 165,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('positive and negative social influences') || t.contains('social influences')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_influences_1.png',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('identifying your support network') || t.contains('support network')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_support_network_1.png',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('communicating your goals')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_communicating_goals_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('building a supportive environment')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_supportive_env_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('using social support during challenges')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_challenges_events.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('long-term success through social support')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s14_long_term_success_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 4: SESSION 15
+    // ==========================================
+    if (t.contains('understanding stress') && !t.contains('triggers')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_understanding_stress.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('how stress affects lifestyle habits')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_stress_lifestyle_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('recognizing personal stress triggers') || t.contains('stress triggers')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_stress_triggers_1.png',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('healthy stress management strategies')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_healthy_strategies_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding time management')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_time_management_1.png',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('improving time management')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_improving_time_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('managing stress during lifestyle change')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s15_managing_stress_1.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    // ==========================================
+    // MODULE 4: SESSION 16
+    // ==========================================
+    if (t.contains('understanding motivation')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s16_understanding_motivation.png',
+            height: 160,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('staying motivated for the long term') || (t.contains('staying motivated') && !t.contains('pedometer'))) {
+      if (pageIndex == 0) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildLandscapeImage(
+              assetPath: 'assets/images/handouts/module_4/s16_staying_motivated.png',
+              height: 160,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(height: 14),
+            _buildFormattedText(text),
+          ],
+        );
+      }
+      return _buildFormattedText(text);
+    }
+
+    if (t.contains('handling holidays') || t.contains('vacations, and special events')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s16_holidays_events.png',
+            height: 160,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('understanding relapse prevention')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s16_relapse_prevention.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('preventing relapse') && !t.contains('understanding')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s16_preventing_relapse.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
+    if (t.contains('looking ahead')) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildLandscapeImage(
+            assetPath: 'assets/images/handouts/module_4/s16_looking_ahead.png',
+            height: 180,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(height: 14),
+          _buildFormattedText(text),
+        ],
+      );
+    }
+
     return _buildFormattedText(text);
   }
 }
